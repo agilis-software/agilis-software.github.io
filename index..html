@@ -1,38 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agilis Software</title>
-    <link rel="stylesheet" href="./styles/global.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/services-list.css" />
+  </head>
+  <body>
     <nav>
-        <div class="logo-container">
-            <h3>Agilis</h3>
-        </div>
-        <div class="links-container">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Produto</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-        </div>
+      <div class="logo-container">
+        <h3>Agilis</h3>
+      </div>
+      <div class="links-container">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Produto</a></li>
+          <li><a href="#">Sobre</a></li>
+        </ul>
+      </div>
     </nav>
     <main>
-        <div class="banner-container">
-            <img class="banner" src="./assets//meeting-background.svg" alt="meeting-background">
-            <div class="banner-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non modi facilis ad aliquam porro eaque quibusdam veniam eligendi voluptatibus quos quia natus dolore, a, ex vitae laudantium? Est, tempore laboriosam!
-                Similique debitis illum id ab quam suscipit aliquid, commodi minus cumque quae placeat ex? Maiores, ipsam. Exercitationem ut ipsam maiores, laborum ipsa commodi nemo totam, quibusdam maxime dolorum omnis laboriosam.
-                Exercitationem inventore nihil in? Voluptatem praesentium impedit, distinctio non molestiae provident dolore. Saepe illo tempora, cum explicabo totam, blanditiis esse adipisci sequi aperiam quidem, vel exercitationem voluptatibus quibusdam maxime! Veritatis.
-                Aliquid unde dolorem soluta sunt eligendi aspernatur, iure dolorum, nemo dolore adipisci culpa rerum commodi. Quas, aspernatur consequuntur impedit corporis rem culpa amet earum doloribus est aperiam et modi nisi!
-                Ipsa, assumenda laudantium dolore in eaque recusandae. Fuga, quia! Tempora debitis minus provident atque aut, nobis aliquid fugit blanditiis reprehenderit facere adipisci consectetur quis quia soluta tenetur nulla itaque dolor!
-            </div>
+      <div class="banner-container">
+        <img
+          class="banner"
+          src="./assets//meeting-background.svg"
+          alt="meeting-background"
+        />
+        <div class="banner-text">
+          <div class="banner-title">
+            <h1>Gerencie seu time da melhor forma!</h1>
+          </div>
+          <div class="banner-body">
+            No software Agilis, você possui toda autonomia para delegação de
+            tarefas e comunicação com sua equipe e seus diversos setores dentro
+            de um projeto!
+          </div>
         </div>
-    </main>
-    <footer>
+      </div>
+      <div class="services-container" id="services">
+        <div class="services-title center">
+          <h2>Sobre a Plataforma</h2>
+        </div>
+        <div class="services-body center">
+          <div class="card-list">
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/tasks.svg" alt="meeting-background" />
+              </div>
+              <div class="card-title">
+                <h3 class="highlight-text-title">Criação de Tarefas</h3>
+              </div>
+              <div class="card-body">
+                Crie tarefas em um projeto, com opções de
+                <span class="highlight-text">status da tarefa</span>,
+                <span class="highlight-text">nível de urgência</span>,
+                <span class="highlight-text">data de entrega</span> e muito
+                mais!
+              </div>
+            </div>
 
-    </footer>
-</body>
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="./assets/communication.svg"
+                  alt="meeting-background"
+                />
+              </div>
+              <div class="card-title">
+                <h3 class="highlight-text-title">Comunicação Integrada</h3>
+              </div>
+              <div class="card-body">
+                Crie
+                <span class="highlight-text">canais de comunicação</span> dentro
+                do seu projeto, mande
+                <span class="highlight-text">mensagens diretas</span> para os
+                colaboradores e mantenha seu time sempre
+                <span class="highlight-text">atualizado</span>!
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/people.png" alt="meeting-background" />
+              </div>
+              <div class="card-title">
+                <h3 class="highlight-text-title">Gestão de Projetos</h3>
+              </div>
+              <div class="card-body">
+                Crie
+                <span class="highlight-text">diversos projetos</span> dentro da
+                plataforma, adicione
+                <span class="highlight-text">colaboradores</span> e suas
+                respectivas <span class="highlight-text">funções</span>,
+                gerencie <span class="highlight-text">datas de entrega</span> e
+                outros detalhes!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
 </html>
