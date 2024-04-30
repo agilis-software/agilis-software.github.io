@@ -10,7 +10,7 @@
 }
 .card-list{
     display: flex;
-    width: 70%;
+    width: 80%;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 60px;
@@ -19,7 +19,6 @@
 .card{
     width: 320px;
     height: 500px;
-    border: 1px solid black;
     border-radius: 10px;
     background-color: white;
     display: flex;
@@ -35,4 +34,10 @@
 
 .card-body{
     padding: 15px
+}
+
+.card:hover{
+    transform: scale(1.045);
+    transition: 0.3s;
+    cursor: pointer;
 }
