@@ -12,7 +12,7 @@
 html{
     font-family: 'Poppins', 'sans-serif';
     scroll-behavior: smooth;
-    background: rgb(161,26,218);
+    background: var(--primary-color);
     background: linear-gradient(245deg, rgba(161,26,218,1) 0%, rgba(114,56,115,1) 53%, rgba(81,25,82,1) 84%);
 }
 
@@ -22,10 +22,15 @@ html{
     align-items: center;
 }
 
+.wrap{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 body{
     width: 100%;
     overflow-x: hidden;
-    background: rgb(161,26,218);
+    background: var(--primary-color);
     background: linear-gradient(245deg, rgba(161,26,218,1) 0%, rgba(114,56,115,1) 53%, rgba(81,25,82,1) 84%);
 }
 
