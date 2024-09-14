@@ -1,0 +1,55 @@
+#platform {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5rem;
+}
+
+.platform-text {
+    text-align: left;
+    align-self: center;
+}
+
+.platform-text p {
+    font-size: 2rem;
+}
+
+.platform-img {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.platform-img img {
+    border: 3px solid #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 18px 50px -25px rgba(0, 0, 0, 1);
+    width: 55%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .platform-img img {
+    border: 3px solid var(--primary-color);
+}
+
+.img1 {
+    text-align: right;
+}
+
+.img1 img {
+    margin-right: 10rem;
+    transform: rotate(5deg);
+}
+
+.img2 {
+    text-align: left;
+}
+
+.img2 img {
+    margin-left: 10rem;
+    transform: rotate(-3deg);
+}
+
+body.dark-mode .platform-img img {
+    box-shadow: 0 18px 50px -25px rgba(255, 255, 255, 0.5);
+}

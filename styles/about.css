@@ -1,0 +1,79 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 5rem;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-title {
+    color: var(--font-color);
+    width: 50%;
+    text-align: left;
+}
+
+body.dark-mode .about-title {
+    color: var(--dark-font-color);
+}
+
+.about-title .title {
+    font-size: 6rem;
+}
+
+.about-text {
+    width: 40%;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.about-cards {
+    min-height: 0;
+}
+
+.card-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 415px;
+    height: 250px;
+    padding: 4rem 5rem;
+    border: 3px solid var(--primary-color);
+    border-radius: 0.5rem;
+    background-color: var(--font-color);
+    color: var(--dark-font-color);
+    display: flex;
+    flex-direction: column;
+    transition: background-color .2s ease;
+    margin: 3rem;
+    text-align: left;
+}
+
+.card i {
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.card-title {
+    color: var(--dark-font-color);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+body.dark-mode .card {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-font-color);
+    border: 3px solid var(--primary-color);
+}
+
+body.dark-mode .card-title {
+    color: var(--primary-color);
+}
