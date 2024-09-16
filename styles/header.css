@@ -41,12 +41,15 @@ nav {
     font-weight: 500;
     color: #5e5e5e;
     border-radius: 0;
-    transition: color 0.2s ease;
+    transition: all 0.2s ease;
+    padding-bottom: .5rem;
+    border-bottom: 3px solid transparent;
 }
 
 .nav-links a:hover,
 .nav-links a.dark-mode:hover {
     color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
 }
 
 .nav-links a.dark-mode {
@@ -62,27 +65,27 @@ nav {
 #theme-toggle {
     border: none;
     background: none;
-    padding: 1rem;
     cursor: pointer;
     font-size: 2rem;
     color: var(--font-color);
     border-radius: 0.5rem;
-    transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-#theme-toggle:hover {
-    background-color: rgba(216, 216, 216, 0.7);
 }
 
 #theme-toggle i {
-    transition: transform 0.3s ease;
+    border-radius: 50%;
+    padding: 1.2rem;
+    transition: all 0.2s ease;
 }
 
-body.dark-mode #theme-toggle {
+#theme-toggle i:hover {
+    background-color: rgba(216, 216, 216, 0.7);
+}
+
+body.dark-mode #theme-toggle i {
     color: var(--dark-font-color);
 }
 
-body.dark-mode #theme-toggle:hover {
+body.dark-mode #theme-toggle i:hover {
     background-color: rgba(65, 61, 61, 0.7);
 }
 
