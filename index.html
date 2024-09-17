@@ -5,160 +5,444 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agilis Software</title>
     <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/services-list.css" />
-    <link rel="stylesheet" href="./styles/profiles-list.css" />
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/platform.css" />
+    <link rel="stylesheet" href="./styles/team.css" />
+    <link rel="stylesheet" href="./styles/faq.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/rocket.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav id="navbar">
-      <div class="logo-container">
-        <h3>Agilis</h3>
-      </div>
-      <div class="links-container">
-        <ul>
-          <li><a href="#navbar">Home</a></li>
-          <li><a href="#services">Plataforma</a></li>
-          <li><a href="#profiles">Nosso Time</a></li>
-          <li><a href="#">Sobre</a></li>
+    <header id="header">
+      <nav>
+        <a href="#header" class="logo"
+          ><img src="./assets/img/agilis.png" alt="agilis-logo" id="home-img"
+        /></a>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#platform">Plataforma</a></li>
+          <li><a href="#team">Nosso time</a></li>
+          <li><a href="#faq">FAQ</a></li>
         </ul>
+      </nav>
+      <div class="header-buttons">
+        <button id="theme-toggle">
+          <i class="bx bx-moon" aria-label="toggle theme"></i>
+        </button>
       </div>
-    </nav>
+    </header>
     <main>
-      <div class="banner-container">
-        <img
-          class="banner"
-          src="./assets//meeting-background.svg"
-          alt="meeting-background"
-        />
-        <div class="banner-text">
-          <div class="banner-title">
-            <h1>Gerencie seu time da melhor forma!</h1>
+      <section id="home">
+        <div class="home-text">
+          <h1 class="title">
+            <span class="highlight-text">Gerencie</span> seu time com
+            <span class="highlight-text">eficiência</span> e
+            <span class="highlight-text">colaboração máxima!</span>
+          </h1>
+          <p>
+            Com o Agilis, você tem total autonomia para delegar tarefas e
+            gerenciar a comunicação com sua equipe e seus diversos setores,
+            <br />tudo de forma centralizada e eficiente dentro de um único
+            projeto.
+          </p>
+        </div>
+        <div class="home-buttons">
+          <a href="#about" class="button"
+            >Saiba mais<i class="bx bx-chevron-down"></i
+          ></a>
+          <a
+            href="https://github.com/agilis-software"
+            class="button"
+            target="_blank"
+          >
+            Siga-nos no GitHub<i class="bx bx-chevron-right"></i>
+          </a>
+        </div>
+        <div class="home-img">
+          <img src="./assets/img/screen.png" alt="platform-screen" />
+        </div>
+      </section>
+      <section id="about">
+        <div class="about-container">
+          <div class="about-title">
+            <h1 class="title">
+              Simplifique<span class="dim"> sua gestão.</span>
+              <span class="dim"> Impulsione</span> com
+              <span class="highlight-text">Agilis</span>
+            </h1>
           </div>
-          <div class="banner-body">
-            No software Agilis, você possui toda autonomia para delegação de
-            tarefas e comunicação com sua equipe e seus diversos setores dentro
-            de um projeto!
+          <div class="about-text">
+            <p>
+              Com o tempo, as ferramentas de gestão de equipes se tornaram
+              complicadas e fragmentadas. Agilis revigora a administração de
+              projetos, oferecendo uma plataforma projetada para maximizar a
+              eficiência, colaboração e simplicidade. Com Agilis, você terá uma
+              gestão de tarefas mais fluida e uma comunicação mais direta,
+              tornando o trabalho mais ágil e menos confuso. Experimente uma
+              solução que realmente funciona para sua equipe, proporcionando uma
+              experiência mais organizada e eficaz.
+            </p>
           </div>
         </div>
-      </div>
-      <div class="services-container" id="services">
-        <div class="services-title center">
-          <h2>Sobre a Plataforma</h2>
-        </div>
-        <div class="services-body center">
+        <div class="about-cards">
           <div class="card-list">
             <div class="card">
-              <div class="card-image">
-                <img src="./assets/tasks.svg" alt="meeting-background" />
-              </div>
               <div class="card-title">
-                <h3 class="highlight-text-title">Criação de Tarefas</h3>
+                <i class="bx bx-task"></i>
+                <h3>Tarefas</h3>
               </div>
               <div class="card-body">
-                Crie tarefas em um projeto, com opções de
-                <span class="highlight-text">status da tarefa</span>,
-                <span class="highlight-text">nível de urgência</span>,
-                <span class="highlight-text">data de entrega</span> e muito
-                mais!
+                <p>
+                  Crie <span class="highlight-text">tarefas</span> em um
+                  projeto, com opções de
+                  <span class="highlight-text">status de tarefa</span>,
+                  <span class="highlight-text">nível de urgência</span>,
+                  <span class="highlight-text">data de entrega</span> e muito
+                  mais.
+                </p>
               </div>
             </div>
 
             <div class="card">
-              <div class="card-image">
-                <img
-                  src="./assets/communication.svg"
-                  alt="meeting-background"
-                />
-              </div>
               <div class="card-title">
-                <h3 class="highlight-text-title">Comunicação Integrada</h3>
+                <i class="bx bx-conversation"></i>
+                <h3>Comunicação</h3>
               </div>
               <div class="card-body">
-                Crie
-                <span class="highlight-text">canais de comunicação</span> dentro
-                do seu projeto, mande
-                <span class="highlight-text">mensagens diretas</span> para os
-                colaboradores e mantenha seu time sempre
-                <span class="highlight-text">atualizado</span>!
+                <p>
+                  Crie
+                  <span class="highlight-text">canais de comunicação</span>
+                  dentro do seu projeto, mande
+                  <span class="highlight-text">mensagens diretas</span> para os
+                  colaboradores e mantenha seu time
+                  <span class="highlight-text">sempre atualizado.</span>
+                </p>
               </div>
             </div>
 
             <div class="card">
-              <div class="card-image">
-                <img src="./assets/people.png" alt="meeting-background" />
-              </div>
               <div class="card-title">
-                <h3 class="highlight-text-title">Gestão de Projetos</h3>
+                <i class="bx bx-briefcase"></i>
+                <h3>Gestão</h3>
               </div>
               <div class="card-body">
-                Crie
-                <span class="highlight-text">diversos projetos</span> dentro da
-                plataforma, adicione
-                <span class="highlight-text">colaboradores</span> e suas
-                respectivas <span class="highlight-text">funções</span>,
-                gerencie <span class="highlight-text">datas de entrega</span> e
-                outros detalhes!
+                <p>
+                  Crie
+                  <span class="highlight-text">diversos projetos</span> dentro
+                  da plataforma, adicione
+                  <span class="highlight-text">colaboradores</span> e suas
+                  respectivas <span class="highlight-text">funções</span>,
+                  gerencie
+                  <span class="highlight-text">datas de entrega</span> e outros
+                  detalhes.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="profiles-container center wrap" id="profiles">
-        <div>
-          <h2 class="label-devs title center">Desenvolvedores</h2>
+      </section>
+
+      <section id="platform">
+        <div class="platform-text">
+          <h1 class="title">
+            Tudo que <br /><span class="highlight-text">sua equipe precisa</span
+            >.
+            <br />
+            Integrado em uma
+            <span class="highlight-text">única plataforma</span>
+          </h1>
+          <p>
+            Passe mais tempo desenvolvendo enquanto simplificamos a gestão de
+            tarefas e a comunicação da sua equipe.
+          </p>
         </div>
-        <div class="profiles-list">
-          <div class="profile-card center">
-            <img src="./assets/profile-1.jpeg" alt="image-profile-1" class="rounded-image">
-            <h4 class="label-devs">Eduardo Frasson</h4>
-            <div class="links-container center">
-              <a href="https://www.linkedin.com/in/dev-edufrasson" target="_blank">
-                <img src="./assets/linkedin.png" alt="linkedin-profile-1" class="icon">
-              </a>
-              <a href="https://github.com/edufrasson" target="_blank">
-                <img src="./assets/github.png" alt="github-profile-1" class="icon">
-              </a>					
-            </div>				
+        <div class="platform-img">
+          <div class="img1">
+            <img src="./assets/img/backlog.png" alt="" />
           </div>
-          <div class="profile-card center">
-            <img src="./assets/profile-2.png" alt="image-profile-4" class="rounded-image">
-            <h4 class="label-devs">Lucas Gomes</h4>
-            <div class="links-container center">
-              <a href="https://www.linkedin.com/in/lukinhadev" target="_blank">
-                <img src="./assets/linkedin.png" alt="linkedin-profile-1" class="icon">
-              </a>
-              <a href="https://github.com/smokeeaasd" target="_blank">
-                <img src="./assets/github.png" alt="github-profile-1" class="icon">
-              </a>					
-            </div>	
-          </div>
-          <div class="profile-card center">
-            <img src="./assets/profile-3.png" alt="image-profile-3" class="rounded-image">
-            <h4 class="label-devs">Leonardo Luzetti</h4>
-            <div class="links-container center">
-              <a href="https://www.linkedin.com/in/leonardoluzetti" target="_blank">
-                <img src="./assets/linkedin.png" alt="linkedin-profile-1" class="icon">
-              </a>
-              <a href="https://github.com/GaMa404" target="_blank">
-                <img src="./assets/github.png" alt="github-profile-1" class="icon">
-              </a>					
-            </div>	
-          </div>
-          <div class="profile-card center">
-            <img src="./assets/profile-4.jpeg" alt="image-profile-4" class="rounded-image">
-            <h4 class="label-devs">Victor Vendrameto</h4>
-            <div class="links-container center">
-              <a href="https://www.linkedin.com/in/victorvendrameto" target="_blank">
-                <img src="./assets/linkedin.png" alt="linkedin-profile-1" class="icon">
-              </a>
-              <a href="https://github.com/VictorVendrameto" target="_blank">
-                <img src="./assets/github.png" alt="github-profile-1" class="icon">
-              </a>					
-            </div>	
+          <div class="img2">
+            <img src="./assets/img/chat.png" alt="" />
           </div>
         </div>
-      </div>
+      </section>
+
+      <section id="team">
+        <div class="team-container">
+          <div class="title">
+            <h1>
+              Equipe <span class="highlight-text">Agilis</span>, <br />
+              dedicados à <span class="highlight-text">inovação</span>
+            </h1>
+          </div>
+          <div class="quote">
+            <i class="bx bxs-quote-left"></i>
+            <div class="img">
+              <img src="./assets/profiles/eduardo.jpeg" alt="" />
+            </div>
+            <div class="quote-text">
+              <h4>
+                Estamos em uma missão para transformar a forma como as equipes
+                colaboram, ajudando-as a trabalhar juntas de maneira mais
+                eficiente e ágil. Mais rápido. Em tudo. De qualquer lugar.
+              </h4>
+              <h5>Eduardo Frasson</h5>
+              <h6>Product Owner, Agilis Software</h6>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-title">
+          <h1>Nossos <span class="highlight-text">desenvolvedores</span></h1>
+          <p>
+            Conheça quem está por trás da
+            <span class="highlight-text">inovação e dedicação</span> na
+            construção da <span class="highlight-text">Agilis</span>.
+          </p>
+        </div>
+        <div class="carousel">
+          <button class="prev"><i class="bx bx-chevron-left"></i></button>
+          <div class="carousel-track-container">
+            <div class="carousel-track">
+              <div class="profile">
+                <div class="profile-card">
+                  <div class="profile-image">
+                    <img
+                      src="./assets/profiles/eduardo.jpeg"
+                      alt="Eduardo Frasson"
+                    />
+                  </div>
+                  <div class="profile-info">
+                    <h3>Eduardo Frasson</h3>
+                    <p><em>Product Owner & Front-End Leader</em></p>
+                    <a
+                      href="https://www.linkedin.com/in/dev-edufrasson/"
+                      target="_blank"
+                      ><button class="button">Saiba mais</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="profile-card">
+                  <div class="profile-image">
+                    <img src="./assets/profiles/lucas.png" alt="Lucas Gomes" />
+                  </div>
+                  <div class="profile-info">
+                    <h3>Lucas Gomes</h3>
+                    <p><em>Back-end Leader</em></p>
+                    <a
+                      href="https://www.linkedin.com/in/lukinhadev/"
+                      target="_blank"
+                      ><button class="button">Saiba mais</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="profile-card">
+                  <div class="profile-image">
+                    <img
+                      src="./assets/profiles/bianca.jpg"
+                      alt="Bianca Morais"
+                    />
+                  </div>
+                  <div class="profile-info">
+                    <h3>Bianca Morais</h3>
+                    <p><em>Designer & Scrum Master</em></p>
+                    <a
+                      href="https://www.linkedin.com/in/moraisbianca/"
+                      target="_blank"
+                      ><button class="button">Saiba mais</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="profile-card">
+                  <div class="profile-image">
+                    <img
+                      src="./assets/profiles/leonardo.png"
+                      alt="Leonardo Luzetti"
+                    />
+                  </div>
+                  <div class="profile-info">
+                    <h3>Leonardo Luzetti</h3>
+                    <p><em>Front-End Developer</em></p>
+                    <a
+                      href="https://www.linkedin.com/in/leonardoluzetti/"
+                      target="_blank"
+                      ><button class="button">Saiba mais</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="profile-card">
+                  <div class="profile-image">
+                    <img
+                      src="./assets/profiles/botan.jpg"
+                      alt="Gabriel Botan"
+                    />
+                  </div>
+                  <div class="profile-info">
+                    <h3>Gabriel Botan</h3>
+                    <p><em>Back-End Developer</em></p>
+                    <a
+                      href="https://www.linkedin.com/in/gabrielficciobotan/"
+                      target="_blank"
+                      ><button class="button">Saiba mais</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="profile-card">
+                  <div class="profile-image">
+                    <img
+                      src="./assets/profiles/vitinho.jpeg"
+                      alt="Victor Vendrameto"
+                    />
+                  </div>
+                  <div class="profile-info">
+                    <h3>Victor Vendrameto</h3>
+                    <p><em>Documentation</em></p>
+                    <a
+                      href="https://www.linkedin.com/in/victorvendrameto/"
+                      target="_blank"
+                      ><button class="button">Saiba mais</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="profile-card">
+                  <div class="profile-image">
+                    <img
+                      src="./assets/profiles/perasoli.jpg"
+                      alt="Vitor Perasoli"
+                    />
+                  </div>
+                  <div class="profile-info">
+                    <h3>Vitor Perasoli</h3>
+                    <p><em>Documentation</em></p>
+                    <a
+                      href="https://www.linkedin.com/in/vitor-perasoli-4a3b41269/"
+                      target="_blank"
+                      ><button class="button">Saiba mais</button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="next"><i class="bx bx-chevron-right"></i></button>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="faq-container">
+          <div class="faq-title">
+            <i class="bx bx-message-rounded-dots"></i>
+            <h2>Perguntas Frequentes</h2>
+            <p>
+              Tudo o que você precisa saber sobre a plataforma da
+              <span class="highlight-text">Agilis</span>.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">
+              Como posso começar a usar o Agilis?
+              <i class="faq-icon bx bx-chevron-down"></i>
+            </h3>
+            <p class="faq-answer">
+              Para começar, basta se inscrever em nossa plataforma e criar uma
+              equipe. Em seguida, você pode adicionar tarefas e começar a
+              gerenciar seus projetos.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">
+              O Agilis é gratuito?
+              <i class="faq-icon bx bx-chevron-down"></i>
+            </h3>
+            <p class="faq-answer">
+              Sim, oferecemos uma plataforma completa de forma gratuita e de
+              código aberto.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">
+              Como posso entrar em contato com os desenvolvedores?
+              <i class="faq-icon bx bx-chevron-down"></i>
+            </h3>
+            <p class="faq-answer">
+              Você pode entrar em contato conosco através do
+              <a href="https://github.com/agilis-software">GitHub</a> ou pelo
+              <a href="">LinkedIn</a>.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">
+              Quais são os requisitos para usar o Agilis?
+              <i class="faq-icon bx bx-chevron-down"></i>
+            </h3>
+            <p class="faq-answer">
+              O Agilis pode ser usado em qualquer dispositivo com um navegador
+              moderno. Não há requisitos específicos além de uma conexão com a
+              internet.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">
+              Como posso contribuir para o Agilis?
+              <i class="faq-icon bx bx-chevron-down"></i>
+            </h3>
+            <p class="faq-answer">
+              Você pode contribuir para o Agilis através do nosso repositório no
+              <a href="https://github.com/agilis-software">GitHub</a>. Aceitamos
+              contribuições de código, feedback e sugestões de melhorias.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="./assets/img/agilis.png" alt="" />
+            <p>&copy; Copyright Agilis 2025 | Todos os direitos reservados</p>
+          </div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#platform">Plataforma</a>
+            <a href="#team">Nosso time</a>
+          </div>
+        </div>
+      </footer>
     </main>
-    <footer></footer>
+
+    <script src="./js/theme-toggle.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/faq.js"></script>
   </body>
 </html>
